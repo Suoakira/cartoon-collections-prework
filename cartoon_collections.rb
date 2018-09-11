@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(planeteer)
   planeteer.map! {|name| name.capitalize}
-  planeteer.each do |name|
+  planeteer.collect do |name|
     "#{name}!"
   end
 end
